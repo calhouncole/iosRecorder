@@ -34,7 +34,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2LS-Uf-uVg"/>
-                                    <segue destination="1Cl-0t-8yV" kind="show" id="piP-sx-6LV"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33X-28-8vW">
@@ -59,6 +58,7 @@
                         <outlet property="recordButton" destination="4b9-uR-0AC" id="kWb-wj-prv"/>
                         <outlet property="recordingLabel" destination="33X-28-8vW" id="Vlh-jq-eBb"/>
                         <outlet property="stopButton" destination="jbi-hz-kNI" id="Adf-ql-lGt"/>
+                        <segue destination="1Cl-0t-8yV" kind="show" identifier="stopRecording" id="Gvo-2h-28X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ol6-x2-Ssj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="627" y="439"/>
+            <point key="canvasLocation" x="628" y="445"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I8G-aI-Ccf">

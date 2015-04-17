@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F39807D1AE0E5C100305F58 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F39807C1AE0E5C100305F58 /* RecordedAudio.swift */; };
 		8F80BF0A1AE04AFB004D87D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F80BF081AE04AFB004D87D4 /* Main.storyboard */; };
 		8FEAE3361ADF2A09001740D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE3351ADF2A09001740D3 /* AppDelegate.swift */; };
 		8FEAE3381ADF2A09001740D3 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE3371ADF2A09001740D3 /* RecordSoundsViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F39807C1AE0E5C100305F58 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		8F80BF091AE04AFB004D87D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FEAE3301ADF2A09001740D3 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FEAE3341ADF2A09001740D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				8FEAE3371ADF2A09001740D3 /* RecordSoundsViewController.swift */,
 				8FEAE3551ADF6166001740D3 /* PlaySoundsViewController.swift */,
 				8F80BF081AE04AFB004D87D4 /* Main.storyboard */,
+				8F39807C1AE0E5C100305F58 /* RecordedAudio.swift */,
 				8FEAE33C1ADF2A0A001740D3 /* Images.xcassets */,
 				8FEAE33E1ADF2A0A001740D3 /* LaunchScreen.xib */,
 				8FEAE3331ADF2A09001740D3 /* Supporting Files */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F39807D1AE0E5C100305F58 /* RecordedAudio.swift in Sources */,
 				8FEAE3381ADF2A09001740D3 /* RecordSoundsViewController.swift in Sources */,
 				8FEAE3561ADF6166001740D3 /* PlaySoundsViewController.swift in Sources */,
 				8FEAE3361ADF2A09001740D3 /* AppDelegate.swift in Sources */,
