@@ -12,18 +12,21 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
+    var recievedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-            var filePathUrl = NSURL.fileURLWithPath(filePath)
-            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
-            audioPlayer.enableRate = true
-        }else{
-            println("The filepath is empty")
-        }
+//        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
+//            var filePathUrl = NSURL.fileURLWithPath(filePath)
+//
+//        }else{
+//            println("The filepath is empty")
+//        }
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: recievedAudio.filePathUrl, error: nil)
+        audioPlayer.enableRate = true
     }
 
     @IBAction func playSlowAudio(sender: UIButton) {

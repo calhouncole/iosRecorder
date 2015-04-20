@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
 
@@ -20,7 +21,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopButton: UIButton!
     
     var audioRecorder:AVAudioRecorder!
-    var recordedAudio: RecordedAudio!
+    
+    var recordedAudio:RecordedAudio!
     
     
     override func viewDidLoad() {
@@ -83,7 +85,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "stopRecording"){
-            let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as PlaySoundsViewController
+            let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as! PlaySoundsViewController
+            let data = sender as! RecordedAudio
+            playSoundsVC.recievedAudio = data
             
         }
     }
