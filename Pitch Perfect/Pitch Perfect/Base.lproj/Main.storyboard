@@ -104,14 +104,36 @@
                                     <action selector="playFastAudio:" destination="1Cl-0t-8yV" eventType="touchUpInside" id="EJA-Md-0ce"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl5-KA-suI">
+                                <rect key="frame" x="16" y="375" width="100" height="100"/>
+                                <state key="normal" image="chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chipmunkAudio:" destination="1Cl-0t-8yV" eventType="touchUpInside" id="YTH-au-eUz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxM-XD-JFa">
+                                <rect key="frame" x="484" y="375" width="100" height="100"/>
+                                <state key="normal" image="darthvader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="darthVaderSound:" destination="1Cl-0t-8yV" eventType="touchUpInside" id="kiu-Fa-rgA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Rjv-8L-Bkd" firstAttribute="top" secondItem="N5J-m3-wsX" secondAttribute="bottom" constant="8" id="7G6-bO-AcV"/>
+                            <constraint firstItem="dl5-KA-suI" firstAttribute="top" secondItem="N5J-m3-wsX" secondAttribute="bottom" constant="311" id="Cog-Ug-Q8G"/>
                             <constraint firstAttribute="centerX" secondItem="jJy-d4-ZlK" secondAttribute="centerX" id="Fr3-U1-mHa"/>
                             <constraint firstItem="hpi-91-H6o" firstAttribute="leading" secondItem="WqL-xo-AGB" secondAttribute="leadingMargin" id="QfQ-R1-twA"/>
+                            <constraint firstItem="SxM-XD-JFa" firstAttribute="top" secondItem="N5J-m3-wsX" secondAttribute="bottom" constant="311" id="Su3-LX-HNN"/>
                             <constraint firstAttribute="centerY" secondItem="jJy-d4-ZlK" secondAttribute="centerY" constant="-211" id="T8q-GQ-cCa"/>
                             <constraint firstItem="Rjv-8L-Bkd" firstAttribute="trailing" secondItem="WqL-xo-AGB" secondAttribute="trailingMargin" id="biv-no-dcO"/>
+                            <constraint firstItem="dl5-KA-suI" firstAttribute="leading" secondItem="WqL-xo-AGB" secondAttribute="leadingMargin" id="ngT-Cq-0Qo"/>
+                            <constraint firstItem="SxM-XD-JFa" firstAttribute="trailing" secondItem="WqL-xo-AGB" secondAttribute="trailingMargin" id="pBr-IH-qDI"/>
                             <constraint firstItem="hpi-91-H6o" firstAttribute="top" secondItem="N5J-m3-wsX" secondAttribute="bottom" constant="8" id="w1B-mn-0ui"/>
                         </constraints>
                     </view>
@@ -144,5 +166,7 @@
         <image name="Microphone" width="100" height="100"/>
         <image name="Snail" width="100" height="100"/>
         <image name="Stop" width="50" height="50"/>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader" width="100" height="100"/>
     </resources>
 </document>
